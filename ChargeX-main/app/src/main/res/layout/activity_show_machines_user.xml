@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:onClick="checkout"
+    android:textAlignment="gravity"
+    tools:context=".showMachinesUser">
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="next"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+
+        android:id="@+id/stationName"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="96dp"
+        android:text="Station"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/machineID"
+        android:layout_width="379dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+
+        android:autoSizeTextType="none"
+        android:text="machine"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/stationName"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/machineSpeed"
+        android:layout_width="379dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:autoSizeTextType="none"
+        android:text="speed:"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/machineID"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/machinePrice"
+        android:layout_width="379dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="48dp"
+        android:autoSizeTextType="none"
+        android:text="Price:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/machineSpeed"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/stationAddress"
+        android:layout_width="379dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="48dp"
+        android:autoSizeTextType="none"
+        android:text="address:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/machinePrice"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="checkout"
+        android:text="CheckOut"
+        app:layout_constraintBottom_toTopOf="@+id/button26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button28" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="previous"
+        android:text="Previous"
+        app:layout_constraintBottom_toTopOf="@+id/button27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

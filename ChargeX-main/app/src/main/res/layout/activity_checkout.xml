@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Checkout">
+
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listenr"
+        android:text="Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <TextView
+        android:id="@+id/slotStation"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Station"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/slotMachineID"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/slotPrice"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Price"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/slotAmount"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/slotStartTime"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="End time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/slotEndTime"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/slotEndTime"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:text="Total Amount"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/payment"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/slotMachineID"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Machine id"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/slotPrice"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/slotAmount"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="Start Time"
+        app:layout_constraintBottom_toTopOf="@+id/slotStartTime"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

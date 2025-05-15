@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "126439366283",
+    "project_id": "chargex-7be55",
+    "storage_bucket": "chargex-7be55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126439366283:android:e3539ebf4da971cc19be8e",
+        "android_client_info": {
+          "package_name": "com.example.chargex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBk2vzzPOWqFVAKgozzNVc8feIx_wZkNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

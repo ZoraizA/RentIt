@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChargeX"
+        tools:targetApi="31">
+        <activity
+            android:name=".BookingIndex"
+            android:exported="false" />
+        <activity
+            android:name=".MyBookings"
+            android:exported="false" />
+        <activity
+            android:name=".BookSlot"
+            android:exported="false" />
+        <activity
+            android:name=".showMachinesUser"
+            android:exported="false" />
+        <activity
+            android:name=".Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerIndex"
+            android:exported="false" />
+        <activity
+            android:name=".ViewStations"
+            android:exported="false" />
+        <activity
+            android:name=".AddSlot"
+            android:exported="false" />
+        <activity
+            android:name=".AddMachine"
+            android:exported="false" />
+        <activity
+            android:name=".StationDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ViewLocation"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyStations"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyStationDetailHostActivity"
+            android:exported="false"
+            android:label="@string/title_activity_verify_station_detail_host"
+            android:resizeableActivity="true"
+            tools:targetApi="24" />
+        <activity
+            android:name=".AdminIndex"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogIn"
+            android:exported="false" />
+        <activity
+            android:name=".StationProfile"
+            android:exported="false" />
+        <activity
+            android:name=".setLocation"
+            android:exported="false" />
+        <activity
+            android:name=".StationIndex"
+            android:exported="false" />
+        <activity
+            android:name=".StationLogin"
+            android:exported="false" />
+        <activity
+            android:name=".SellerReg"
+            android:exported="false"
+            android:label="@string/title_activity_seller_reg"
+            android:theme="@style/Theme.ChargeX.NoActionBar" />
+        <activity
+            android:name=".Selector"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ChargeX">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+    </application>
+
+</manifest>
